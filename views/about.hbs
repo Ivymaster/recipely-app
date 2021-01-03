@@ -1,0 +1,135 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>O nama | Recipely</title>
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="shortcut icon" href="/img/index/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Eczar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="pozadina">
+        <div class="suzenje">
+            <header>
+                <div class="wrapper">
+                    
+                    <div class="logo">
+                        <img src="/img/index/LogoR.png">
+                    </div>
+                    <ul class="nav-area">
+                        <li><a href="/">Početna</a></li>
+                        <li class="active"><a href="/about">O nama</a></li>
+                        <li><a href="/contact">Kontakt</a></li>
+                        <li><a href="/recepts">Recepti</a></li>
+                        {{#ifEquals type "korisnik"}}
+                        <li><a href="/me">Moj profil</a></li>
+                        <li><a href="/logOut">Logout</a></li>
+                        {{/ifEquals}}
+                        {{#ifEquals type "none"}}
+                        <li><a href="/signup">Registracija</a></li>
+                        <li><a href="/login">Login</a></li>
+                        {{/ifEquals}}
+                    </ul>
+                </div>
+
+                <div class="welcome-text">
+                    <!--<img src="slike/div.png" class="frameU">-->
+                    <img class="bloomora" src="/img/index/LogoR.png">
+                    <h1>Pročitajte nešto o nama!</h1>
+                    <a href="/contact"> Kontaktirajte nas </a>
+                    <!--<img src="slike/div.png" class="frameD">-->
+                </div>
+            </header>
+
+            <div class="tabela-about">
+                <p align="center">
+                    <table cellspacing="5" width="80%" height="100%">
+                        <tr>
+                            <td width="20%" align="center">
+                                <img class="slika-u-tabeli" src="/img/about/rec1.jpg">
+                            </td>
+                            <td width="60%">
+                                <h1> O nama | Recipely </h1>
+                <p>
+                    Naša organizacija je osnovana 1997. godine u Bihaću, što ovu organizaciju čini jednom od najstarijih u Bihaću. Naš razvojni tim se nalazi u Ulici Bosanskih kraljeva i dostupan je svakim radnim danom za tehničku podršku.<br><br>Zdravi recepti nikad nisu bili ovako na dohvat ruke. Naš tim Vam uvijek preporučuje nešto posebno i neobično, inzistirajući na kvaliteti prema Vašim zahtjevima.
+                </p>
+                </td>
+                <td width="20%" align="center">
+                    <img class="slika-u-tabeli" src="/img/about/rec2.jpg">
+                </td>
+                </tr>
+
+                <tr>
+                    <td align="center">
+                        <img class="slika-u-tabeli" src="/img/about/rec3.jpg">
+                    </td>
+                    <td align="center" style="text-align: center;">
+                        <img src="/img/about/sppon.png" style="width: 250px; margin-top: -25%; margin-bottom: 0%;">
+                        <p style="text-align: justify;">
+                            Vrijeme ručno pisanih kuharica je gotovo, jer naša organizacija nudi online spremanje i komentiranje recepata, koji su zdravi, brzi i ukusni.<br><br>Osim Vašeg ličnog dnevnika recepata, nudimo korisničku podršku u bilo koje doba, sastavljenu od svjetski poznatih trenera. Korisnička podrška je dostupna putem mobilnog telefona (037) 311 829 svakim radnim danom.
+                        </p>
+                    </td>
+                    <td align="center">
+                        <img class="slika-u-tabeli" src="/img/about/rec4.jpg">
+                    </td>
+                </tr>
+                </table>
+                </p>
+            </div>
+
+
+
+            <footer>
+                <table width="100%" height="100%" class="futer">
+                    <tr>
+                        <td width="25%" align="right">
+                            <h1>Ukoliko imate pitanja</h1>
+                            <p style="padding-left: 6%; color: #44484f; font-size: 1.2vw; font-weight: bold;">(387) 311 829</p>
+                        </td>
+
+                        <td width="25%">
+                            <h1>Prihvaćamo sve donacije</h1>
+                            <p style="padding-left: 4.5%">VISA, PayPal, MasterCard</p>
+                        </td>
+
+                        <td rowspan="3" width="25%">
+                            <h1 style="padding-left: 2%">Organizacija</h1>
+                            <p style="padding-left: 2%">
+                                Organizacija Recipely je osnovana 1997. godine u gradu Bihaću.
+                                <br>Naš moto je osigurati korisnicima zdrav način života uz različite recepte.
+                                <br><br>Tehnička podrška je dostupna svakim radnim danom od 08:00h do 20:00h, te subotom od 08:00h do 17:00h.
+                            </p>
+                        </td>
+
+                        <td rowspan="3" width="25%">
+                            <h1>Povežite se s nama</h1>
+                            <p style="padding-left: 2%; line-height: 4vw;">
+                                <a href="#"><img class="ikone" src="/img/index/facebook.png"></a>&nbsp;www.facebook.com/Recipely<br>
+                                <a href="#"><img class="ikone" src="/img/index/twitter.png"></a>&nbsp;www.twitter.com/Recipely<br>
+                                <a href="#"><img class="ikone" src="/img/index/instagram.png"></a>&nbsp;@recipely
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" colspan="2" width="50%" style="padding-left: 13%;">
+                            <h1>Posjetite nas na mjestu</h1>
+                            <p style="max-width: 40%; font-size: 1.3vw; margin-left: -4%; margin-top: 3%;">
+                                Bosanskih Kraljeva br.3, Bihać, Bosna i Hercegovina<br>
+                                <img class="logotip-tabela" src="/img/index/LogoR.png">
+                                <div style="margin-left: 5%; color: #636161; font-size: 1vw; transform: translate(0%,999%);">&copy; Recipely. Sva prava pridržana.</div>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

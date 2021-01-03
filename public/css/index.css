@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+.pozadina {
+    background-image: url("../img/index/sas.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-width: 700px;
+}
+
+.suzenje {
+    /*	transform: scale(0.98);*/
+}
+
+.wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url("../img/index/povrce.jpg");
+    max-width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.logo img {
+    width: 50px;
+    float: right;
+    margin-top: 34px;
+}
+
+ul { /* pozicija navbara */
+    float: left;
+    list-style-type: none;
+    margin-top: 43px;
+}
+
+    ul li {
+        display: inline-block;
+    }
+
+        ul li a { /* izgled navbara */
+            text-decoration: none;
+            color: #e6e3e4;
+            padding: 5px 20px;
+            padding-left: 15px;
+            border: 1px solid #fff transparent;
+            text-shadow: 2px 2px 5px #000;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+        }
+
+            ul li a:hover { /* ponašanje navbara 'on-click' */
+                transition: 1s ease; /* brzina mijenjanja 'on-click' */
+                background-color: #4f6e3b;
+                border-radius: 30px;
+            }
+
+        ul li.active a { /* aktivan je dio navbara za početnu stranicu */
+            background-color: #7cb865;
+            border-radius: 30px;
+        }
+
+    .welcome-text img {
+        width: 200px;
+        height: 200px;
+    }
+
+
+.welcome-text {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin-top: 130px;
+    text-align: center;
+    background: #000;
+    opacity: 0.8;
+    width: 100%;
+    padding: 30px 25px;
+}
+
+    .welcome-text h1 {
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+        color: #7cb865;
+    }
+    .welcome-text a {
+        text-decoration: none;
+        color: white;
+        position: absolute;
+        z-index: 1;
+        background-color: #7cb865;
+        border-radius: 30px;
+        text-transform: uppercase;
+        padding: 15px 20px;
+        transform: translate(-97px, 10px);
+        box-shadow: 2px 2px 5px #000;
+    }
+
+        .welcome-text a:hover {
+            border-radius: 40px;
+            transition: 1s ease;
+            box-shadow: 5px 3px 10px #000;
+        }
+
+
+.traka {
+    margin-bottom: 120px;
+    width: 100%;
+    height: 70px;
+    background-color: #7cb865;
+    padding: 20px 70px;
+    line-height: 14px;
+}
+
+    .traka h1 {
+        font-size: 13px;
+        float: right;
+        text-align: right;
+        color: #000;
+    }
+
+.content {
+    background-color: #546e38;
+    width: 100%;
+}
+
+    .content img {
+        width: 100%;
+        height: auto;
+        float: center;
+        margin: auto;
+        border-radius: 5px;
+    }
+
+
+footer {
+    margin-top: 120px;
+    background: rgb(212,227,207);
+    background: linear-gradient(90deg, rgba(212,227,207,1) 0%, rgba(124,184,101,1) 100%, rgba(0,212,255,1) 100%);
+    max-width: 100%;
+    min-height: 23vw;
+    height: 23vw;
+    position: relative;
+    margin-bottom: -200px;
+}
+
+
+.futer {
+    padding: 18px 50px;
+}
+
+    .futer td {
+        vertical-align: top;
+        padding-left: 10px;
+        align-items: center;
+    }
+
+    .futer h1 {
+        font-family: 'Dancing Script', cursive;
+        color: #424242;
+        position: absolute;
+        font-size: 2vw;
+        padding-left: 2%;
+    }
+
+    .futer p {
+        text-align: justify;
+        text-justify: inter-word;
+        max-width: 19vw;
+        color: #636161;
+        position: absolute;
+        font-size: 1vw;
+        margin-top: 4%;
+        font-weight: bold;
+    }
+
+.logotip-tabela {
+    width: 25%;
+    position: absolute;
+    margin-left: 30%;
+}
+
+.ikone {
+    width: 10%;
+    filter: grayscale(100%);
+    border-radius: 50%;
+    transform: translate(0%,30%);
+}
+
+
+.slika-u-tabeli {
+    width: 320px;
+    height: 420px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+
+
+::-webkit-scrollbar { /* kostumizacija scrollbara */
+    width: 10px;
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb { /* kostumizacija crtice */
+    border-radius: 15px;
+    background-color: #7cb865;
+}

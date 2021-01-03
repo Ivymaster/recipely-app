@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Maven Pro', sans-serif;
+  box-sizing: border-box;
+}
+
+.pozadina {
+  background-image: url('../img/index/sas.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-width: 700px;
+}
+
+.suzenje {
+  /*transform: scale(0.95);*/
+}
+
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+.lokacija {
+  width: 25vw;
+  height: 25vw;
+  border-radius: 30px;
+  border-color: #7f9fad;
+  border-width: 4px;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+    url('../img/index/povrce.jpg');
+  max-width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.podaci {
+  max-width: 100%;
+  min-height: 32vw;
+  height: 32vw;
+  position: relative;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 40%,
+    rgba(229, 255, 231, 1) 62%,
+    rgba(192, 228, 179, 1) 90%,
+    rgba(157, 228, 151, 1) 100%
+  );
+  padding: 20px 20px;
+}
+
+.tabelica h1 {
+  font-family: 'Dancing Script', cursive;
+  color: #55704a;
+  font-size: 2vw;
+  padding-left: 2%;
+  text-align: right;
+}
+
+.tabelica p {
+  text-align: right;
+  font-weight: bold;
+  color: #636161;
+  font-size: 1vw;
+  margin-top: 4%;
+  line-height: 2vw;
+}
+
+.kolona {
+  background-image: url('../img/index/donut.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.desna-kolona h1 {
+  text-align: left;
+  color: #596778;
+}
+
+.desna-kolona p {
+  text-align: left;
+}
+
+ul {
+  /* pozicija navbara */
+  float: left;
+  list-style-type: none;
+  margin-top: 43px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  /* izgled navbara */
+  text-decoration: none;
+  color: #e6e3e4;
+  padding: 5px 20px;
+  padding-left: 15px;
+  border: 1px solid #fff transparent;
+  text-shadow: 2px 2px 5px #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+ul li a:hover {
+  /* pona�anje navbara 'on-click' */
+  transition: 1s ease; /* brzina mijenjanja 'on-click' */
+  background-color: #4f6e3b;
+  border-radius: 30px;
+}
+
+ul li.active a {
+  /* aktivan je dio navbara za po�etnu stranicu */
+  background-color: #7cb865;
+  border-radius: 30px;
+}
+
+.logo img {
+  width: 50px;
+  float: right;
+  margin-top: 34px;
+}
+
+.welcome-text {
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  margin-top: 130px;
+  text-align: center;
+  background: #000;
+  opacity: 0.8;
+  width: 100%;
+  padding: 30px 25px;
+}
+
+.welcome-text h1 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  color: #7cb865;
+}
+
+.welcome-text a {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  background-color: #7cb865;
+  border-radius: 30px;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  transform: translate(-97px, 10px);
+  box-shadow: 2px 2px 5px #000;
+}
+
+.welcome-text a:hover {
+  border-radius: 40px;
+  transition: 1s ease;
+  box-shadow: 5px 3px 10px #000;
+}
+
+.welcome-text img {
+  width: 200px;
+  height: 200px;
+}
+
+footer {
+  background: rgb(212, 227, 207);
+  background: linear-gradient(
+    90deg,
+    rgba(212, 227, 207, 1) 0%,
+    rgba(124, 184, 101, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  max-width: 100%;
+  min-height: 23vw;
+  height: 23vw;
+  position: relative;
+  margin-bottom: -300px;
+}
+
+.futer {
+  padding: 18px 50px;
+}
+
+.futer td {
+  vertical-align: top;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.futer h1 {
+  font-family: 'Dancing Script', cursive;
+  color: #424242;
+  position: absolute;
+  font-size: 2vw;
+  padding-left: 2%;
+}
+
+.futer p {
+  text-align: justify;
+  text-justify: inter-word;
+  max-width: 19vw;
+  color: #636161;
+  position: absolute;
+  font-size: 1vw;
+  margin-top: 4%;
+  font-weight: bold;
+}
+
+.logotip-tabela {
+  width: 25%;
+  position: absolute;
+  margin-left: 30%;
+}
+
+.ikone {
+  width: 10%;
+  filter: grayscale(100%);
+  border-radius: 50%;
+  transform: translate(0%, 30%);
+}
+
+.tabela {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.tabela table {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.tabela table img {
+  width: 90%;
+}
+
+.tabela img {
+  width: 100%;
+}
+
+.tabela img:hover {
+  transition: transform 1s ease;
+  transform: translateY(4px);
+  filter: brightness(1.1);
+}
+
+::-webkit-scrollbar {
+  /* kostumizacija scrollbara */
+  width: 10px;
+  background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  /* kostumizacija crtice */
+  border-radius: 15px;
+  background-color: #7cb865;
+}
+
+#fiksiranje {
+  /* ovo je jo� jedan wrapper, koji omogu�uje da se ne pomi�u sekcije kreatora pri resize stranice */
+  margin-left: auto;
+  margin-right: auto;
+  width: 1356px;
+}
+
+.section-4 {
+  height: 550px;
+  background: #fff;
+  margin-bottom: 150px;
+}
+
+.contact-section {
+  background-color: #fff;
+  padding: 40px 0px;
+}
+
+.contact-section h1 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  color: #55704a;
+  font-size: 2vw;
+}
+
+.divider {
+  /* pode�avanje dividera */
+  width: 150px;
+  height: 10px;
+  background-color: #7cb865;
+  margin: 20px auto;
+}
+
+.contact-form {
+  /* pozicioniranje sveukupne forme */
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text {
+  /* pozicioniranje i ure�ivanje boxova za formu */
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #cddecc;
+  padding: 20px 40px;
+  outline: none;
+  color: #395237;
+}
+
+.contact-form-text:focus {
+  /* pona�anje boxova tokom njihovog popunjavanja */
+  box-shadow: 0 0 2px 2px #7cb865;
+}
+
+textarea.contact-form-text {
+  /* Ne dozvoljavamo da se resize areatext */
+  resize: none;
+  height: 120px;
+}
+
+.contact-form-btn {
+  /* re�ivanje buttona 'Po�alji' */
+  margin-top: -3px;
+  float: right;
+  border: 0;
+  background: #7cb865;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.contact-form-btn:hover {
+  /* button 'po�alji' on-click */
+  background: #294727;
+}
+
+.alert {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 9999;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 1.6rem 15rem;
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+}
+.alert--success {
+  background-color: #7cb865;
+  height: 100 px;
+}
+.alert--error {
+  background-color: #eb4d4b;
+}

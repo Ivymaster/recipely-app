@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <title>Moj Profil</title>
+    <link rel="stylesheet" type="text/css" href="/css/profile.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Eczar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/img/index/favicon.ico">
+</head>
+
+<body>
+    <!--<div class="header">
+
+    </div>-->
+    <div id="login-message"></div>
+    <div class="wrapper">
+        <div class="logo">
+            <img src="/img/index/LogoR.png">
+        </div>
+        <ul>
+            <li><a href="/">Pocetna</a></li>
+            <li class="active"><a href="/me">Moj profil</a></li>
+            <li><a href="/recepts">Recepti</a></li>
+            <li><a href="/recepts/mojiRecepti">Spremljeni recepti</a></li>
+            <li><a href="/meal">Planovi ishrane</a></li>
+            <li><a href="/meal/myMeal">Moj plan ishrane</a></li>
+            <li><a href="/logOut">Logout</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="mainsign">
+
+
+        <div id="login-message"></div>
+
+        <div class="signupbox">
+            <img class="slika" src="/img/users/{{user.photo}}" id="userImage"><br>
+            <div class="signup-naslov">Mozete izmijeniti korisnicke podatke! </div>
+
+            <form method="POST" action="" id="updateDataForm">
+
+                <label class="form-label" name="firstname">Ime:</label><br>
+                <input class="form-input" type="text" value={{user.firstname}} name="firstname" required="required"
+                       id="update-firstname" />
+                <br>
+
+                <label class="form-label" name="lastname">Prezime:</label><br>
+                <input class="form-input" type="text" value={{user.lastname}} name="lastname" required="required"
+                       id="update-lastname" />
+                <br>
+
+                <label class="form-label" name="username">Korisnicko ime:</label><br>
+                <input class="form-input" type="text" value={{user.username}} name="username" required="required"
+                       id="update-username" />
+                <br>
+
+
+                <label class="form-label" name="email">E-mail:</label><br>
+                <input class="form-input" type="email" value={{user.email}} name="email" required="required"
+                       id="update-email" /> <br>
+
+                <label name="photo" for="photo"> Promijenite profilnu sliku: </label><br />
+
+                <input type="file" accept="image/*" name="photo" id="update-photo" />
+
+
+                <button class="form-sign-btn" type="submit">Spremi promjene</button><br>
+
+            </form>
+        </div>
+        <div class="signupsifra">
+            <div class="signup-naslov"> Zelite li promijeniti sifru? </div>
+            <form method="POST" action="" id="updatePasswordForm">
+
+                <label class="form-label" name="password">Stara sifra:</label><br>
+                <input class="form-input" minlength="8" type="password" placeholder="Unesi sifru" value=""
+                       name="oldPassword" id="old-password" /> <br>
+
+                <label class="form-label" name="password">Nova Sifra:</label><br>
+                <input class="form-input" minlength="8" type="password" placeholder="Unesi sifru" value=""
+                       name="newPassword" id="update-password" /> <br>
+
+                <label class="form-label" name="passwordConfirm">Ponovite novu sifru:</label><br>
+                <input class="form-input" minlength="8" type="password" placeholder="Unesi sifru" value=""
+                       name="newPasswordConfirm" id="update-passwordConfirm" /> <br>
+
+                <button class="form-sign-btn" type="submit">Spremi promjene</button><br>
+
+            </form>
+        </div>
+    </div>
+
+
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="/js/updateProfile.js"></script>
+
+</html>

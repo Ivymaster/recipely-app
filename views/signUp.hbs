@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" type="text/css" href="/css/signup.css">
+    <link rel="shortcut icon" href="/img/index/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Eczar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--<div class="header">
+
+    </div>-->
+
+    <div class="mainsign">
+        <div id="login-message"></div>
+        <div class="bloomora"><a href="/"><img src="/img/index/arrow.png"></a></div>
+        <div class="signupbox">
+            <div class="signup-naslov"> Registrirajte se </div>
+
+            <form method="POST" action="" id="signUpForm" enctype="multipart/form-data">
+
+                <label class="form-label" name="firstname">Ime:</label><br>
+                <input class="form-input" type="text" placeholder="Unesi ime" value="" name="firstname"
+                       id="signUp-firstname" /><br>
+
+                <label class="form-label" name="lastname">Prezime:</label><br>
+                <input class="form-input" type="text" placeholder="Unesi prezime" value="" name="lastname"
+                       id="signUp-lastname" /> <br>
+
+                <label class="form-label" name="username">Korisnicko ime:</label><br>
+                <input class="form-input" type="text" placeholder="Unesi korisnicko ime" value="" name="username"
+                       id="signUp-username" />
+                <br>
+
+                <label class="form-label" name="password">Sifra:</label><br>
+                <input class="form-input" minlength="8" type="password" placeholder="Unesi sifru" value=""
+                       name="password" id="signUp-password" /> <br>
+                <label class="form-label" name="passwordConfirm">Sifra provjera:</label><br>
+                <input class="form-input" minlength="8" type="password" placeholder="Unesi sifru" value=""
+                       name="passwordConfirm" id="signUp-passwordConfirm" /> <br>
+
+                <label class="form-label" name="email">E-mail:</label><br>
+                <input class="form-input" type="email" placeholder="Unesi email" value="" name="email"
+                       id="signUp-email" /> <br>
+
+                <!--
+                <input type="file" accept="image/*" name="photo" id="signUp-photo" />
+                <label name="photo" for="photo"> Izaberi sliku </label><br />-->
+
+                <button class="form-sign-btn" type="submit">Prijava</button><br>
+                <a href="/login" style="cursor: pointer">Vec imate racun? Log in!</a>
+
+            </form>
+        </div>
+    </div>
+
+    <!--<div class="footer">
+
+    </div>-->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="/js/signUp.js"></script>
+
+</html>

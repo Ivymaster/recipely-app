@@ -1,0 +1,306 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Maven Pro', sans-serif;
+	box-sizing: border-box;
+}
+
+p span {
+    display: block;
+}
+
+.koraci {
+	width: 600px;
+	height: 600px;
+	background: #fff;
+	color: #000;
+	top: 50%;
+	left: 50%;
+	/*position: absolute;
+	transform: translate(-50%, -50%);*/
+	box-sizing: border-box;
+	padding: 0px 30px;
+	opacity: 0.85;
+	border-radius: 20px;
+}
+
+.naslov {
+	color: #96b38d;
+}
+
+	.koraci h1 {
+		font-family: 'Dancing Script', cursive;
+		color: #424242;
+		
+		font-size: 2vw;
+		padding-left: 2%;
+	}
+
+
+.logo img {
+	width: 50px;
+	float: right;
+	margin-top: 34px;
+}
+
+.wrapper {
+	width: 90%;
+	margin: auto;
+}
+
+.nav-area {
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../img/index/povrce.jpg");
+	height: 650px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	
+}
+
+
+
+
+.traka {
+	margin-top: 60px;
+	width: 100%;
+	height: 70px;
+	background-color: #7cb865;
+	padding: 20px 70px;
+	line-height: 14px;
+}
+
+	.traka h1 {
+		font-size: 13px;
+		float: right;
+		text-align: right;
+		color: #000;
+	}
+
+ul { /* pozicija navbara */
+	float: left;
+	list-style-type: none;
+	margin-top: 43px;
+}
+
+	ul li {
+		display: inline-block;
+	}
+
+		ul li a { /* izgled navbara */
+			text-decoration: none;
+			color: #e6e3e4;
+			padding: 5px 20px;
+			padding-left: 15px;
+			border: 1px solid #fff transparent;
+			text-shadow: 2px 2px 5px #000;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 20px;
+		}
+
+			ul li a:hover { /* ponašanje navbara 'on-click' */
+				transition: 1s ease; /* brzina mijenjanja 'on-click' */
+				background-color: #4f6e3b;
+				border-radius: 30px;
+			}
+
+		ul li.active a { /* aktivan je dio navbara za poèetnu stranicu */
+			background-color: #7cb865;
+			border-radius: 30px;
+		}
+
+
+.tabela {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 5px 5px;
+    margin-top: 10px;
+    border-spacing: 1px;
+    border-collapse: separate;
+}
+
+
+
+
+.signupbox { /* uredjivanje signup-box-a */
+    width: 100%;
+    height: 200px;
+    margin-top: 60px;
+   text-align: center;
+}
+
+    .signupbox textarea {
+    white-space: normal;
+    
+}
+
+.form-label { /* uredjivanje label-a */
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #7cb865;
+    width: 100%;
+}
+
+
+.form-sign-btn {
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 40px;
+    background: #7cb865;
+    font-size: 18px;
+    color: #3d3c3d;
+    border-radius: 20px;
+    transition: transform 0.9s ease;
+    margin-top: 15px;
+}
+
+    .form-sign-btn:hover {
+        border-radius: 30px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+
+#save-recept-button {
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 40px;
+    background: #7cb865;
+    font-size: 18px;
+    color: #3d3c3d;
+    border-radius: 20px;
+    transition: transform 0.9s ease;
+    margin-top: 15px;
+}
+
+    #save-recept-button:hover {
+        border-radius: 30px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+
+.form-input { /* uredjivanje inputa */
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    border: 2px dashed #424242;
+    background: transparent;
+    outline: none;
+    height: 35px;
+    color: #3d3c3d;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+#spoonacular-ingredient-vis-grid {
+    margin-left: 40px;
+}
+
+/*kolicina doze, slika, sastojak*/
+.spoonacular-ingredient {
+    font-size: 16px;
+    text-decoration: solid;
+    text-align: center;
+    height: 150px;
+    width: 150px;  
+}
+
+
+.bloomora img {
+	width: 60px;
+	float: left;
+	margin-top: 2%;
+	margin-left: 2%;
+}
+
+	.bloomora img:hover {
+		transition: 1s ease;
+		filter: brightness(3);
+		transform: translateY(2px);
+	}
+
+.slika {
+	width: 100%;
+	text-align: center;
+	
+}
+
+	.slika h1 {
+		position: absolute;
+		z-index: 1;
+		font-size: 50px;
+		font-family: 'Dancing Script';
+		color: #4f6e3b;
+		width: 100%;
+		background: #000;
+		opacity: 0.8;
+		padding: 70px 25px;
+		margin-top: 230px;
+	}
+
+.naslov-sastojci {
+    width: 100%;
+    text-align: center;
+}
+
+    .naslov-sastojci h1 {
+        font-size: 50px;
+        font-family: 'Dancing Script';
+        color: #4f6e3b;
+        width: 100%;
+    }
+
+.slika img {
+	width: 600px;
+	height: 470px;
+	background-color: #7cb865;
+	padding: 10px 10px;
+	margin-top: 50px;
+	margin-left: 100px;
+}
+
+
+.alert {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 9999;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 1.6rem 15rem;
+    -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+}
+
+.alert--success {
+    background-color: #7cb865;
+    height: 100 px;
+}
+
+.alert--error {
+    background-color: #eb4d4b;
+}
+
+
+::-webkit-scrollbar { /* kostumizacija scrollbara */
+	width: 10px;
+	background-color: #000;
+}
+
+::-webkit-scrollbar-thumb { /* kostumizacija crtice */
+	border-radius: 15px;
+	background-color: #7cb865;
+}

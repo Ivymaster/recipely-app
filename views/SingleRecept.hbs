@@ -1,0 +1,100 @@
+<head>
+    <title>{{recept.title}}</title>
+    <link rel="stylesheet" type="text/css" href="/css/savedChange.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Eczar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/img/index/favicon.ico">
+</head>
+
+<div id="login-message"></div>
+<!--ISPIS ERORA-->
+<div class="nav-area">
+    <div class="wrapper">
+
+        <div class="logo">
+            <img src="/img/index/LogoR.png">
+        </div>
+
+        <ul>
+            <li><a href="/">Pocetna</a></li>
+            <li><a href="/me">Moj profil</a></li>
+            <li><a href="/recepts">Recepti</a></li>
+            <li><a href="/recepts/mojiRecepti">Spremljeni recepti</a></li>
+            <li><a href="/meal">Planovi ishrane</a></li>
+            <li><a href="/meal/myMeal">Moj plan ishrane</a></li>
+            <li><a href="/users/logOut">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="slika">
+        <h1>{{recept.title}}</h1><br />
+
+        <img src="{{recept.image}}">
+    </div>
+
+    <div class="traka">
+        <h1>SACUVAJTE RECEPT VEC DANAS<br>TREBATE POMOC?: (037) 311 829</h1>
+    </div>
+
+</div>
+
+
+
+
+<div class="signupbox">
+    <div class="naslov-sastojci" style="margin-top: 100px;">
+        <h1> Sacuvajte recept uz biljesku: </h1>
+    </div>
+
+    <form method="POST" action="">
+        <label class="form-label" name="comment">Vasa biljeska:</label><br>
+        <textarea id="{{recept.id}}" name="comment" rows="4" cols="50"></textarea><br />
+        <button value="{{recept.id}}" id="save-recept-button">Sacuvaj</button>
+    </form>
+</div>
+
+<table width="100%" height="100%" class="tabela">
+    <tr>
+        <td align="center" valign="top" width="50%">
+            <div class="naslov-sastojci">
+                <h1>Koraci recepta:</h1>
+            </div>
+
+
+            <div class="koraci">
+                {{#each koraci}}
+                <div class="naslov"
+                    style="color:#1f3020; font-size: 20px; border-bottom: 1px solid #6f8569; width: 100%">
+                    {{this.number}}.<br></div>
+
+                <div class="naslov">Sastojci: </div>
+                {{#each this.ingredients}}
+                {{this.name}} -
+                {{/each}}<br>
+                <div class="naslov">Posudje: </div>
+                {{#each this.equipment}}
+                {{this.name}}
+                {{/each}}
+                <br>
+                <div class="naslov">Postupak: </div>
+                {{this.step}}<br><br /><br />
+                {{/each}}
+            </div>
+        </td>
+        <td align="center" valign="top" width="50%">
+            <div class="naslov-sastojci">
+                <h1>Sastojci:</h1>
+            </div>
+            {{{widget}}}
+        </td>
+    </tr>
+</table>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="/js/saveRecept.js"></script>

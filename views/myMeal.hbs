@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Moj plan ishrane</title>
+    <link rel="stylesheet" type="text/css" href="/css/mymeal.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Eczar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/index/favicon.ico">
+</head>
+
+<body>
+    <!--<div class="header">
+
+    </div>-->
+
+    <div class="mainsign">
+       
+        <div id="login-message"></div>
+        <div class="bloomora"><a href="/"><img src="/img/index/arrow.png"></a></div>
+        <div class="signupbox">
+
+            <div class="signup-naslov">Moj danasnji plan ishrane</div>
+            <a class="brisanje" href="/meal/clearMeal">Obrisi plan ishrane</a>
+            <h1 style="margin-top: 15px;">{{template.day}}</h1>
+            <br>
+
+            <h1>Danasnja nutriciona vrijednost </h1>
+            {{#each template.nutritionSummary.nutrients}}
+            <p> {{this.title}} - {{this.amount}}{{this.unit}}</p>
+            {{/each}}
+            <br>
+
+            <h1>Recepti koji se konzumiraju danas* </h1>
+            {{#each template.items}}
+            <p><a href="/recepts/{{this.value.id}}">{{this.value.title}}</a></p>
+            {{/each}}
+
+            <h2>*Kliknite na recept da biste dobili vise informacija!</h2>
+
+
+
+        </div>
+
+    </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="/js/updateProfile.js"></script>
+
+</html>

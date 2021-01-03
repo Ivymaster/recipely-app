@@ -1,0 +1,174 @@
+<html>
+
+<head>
+    <title>Recepti | Recipely</title>
+    <link rel="stylesheet" type="text/css" href="/css/places.css">
+    <link rel="shortcut icon" href="/img/index/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Eczar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="nav">
+            <!-- Klasa za navbar -->
+            <div class="logo">
+                <img src="/img/index/LogoR.png">
+            </div>
+
+            <ul>
+                <li><a href="/">Pocetna</a></li>
+                <li><a href="/about">O nama</a></li>
+                <li><a href="/contact">Kontakt</a></li>
+                <li class="active"><a href="/recepts">Recepti</a></li>
+                {{#ifEquals type "korisnik"}}
+                <li><a href="/me">Moj profil</a></li>
+                <li><a href="/logOut">Logout</a></li>
+                {{/ifEquals}}
+                {{#ifEquals type "none"}}
+                <li><a href="/signup">Registracija</a></li>
+                <li><a href="/login">Login</a></li>
+                {{/ifEquals}}
+            </ul>
+        </div>
+        <!-- :::::: Search Bar :::::: -->
+        <form action="/recepts" method="POST" class="">
+            <!-- <input type="text" name="search" placeholder="Pretraga okruga.."> -->
+
+            <div class="pretraga">
+                <div class="naslov-sastojci">
+                    <label name="query">Pretraga recepata</label>
+                </div>
+                <input class="form-input" type="text" placeholder="Unesi termine" value="" name="query" /><br>
+
+                <select name="cuisine" class="pretraga-bar">
+                    <option value="" selected="selected">Odaberite kuhinju</option>
+                    <option value="African">African</option>
+                    <option value="American">American</option>
+                    <option value="British">British</option>
+                    <option value="Cajun">Cajun</option>
+                    <option value="Caribbean">Caribbean</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Eastern European">Eastern European</option>
+                    <option value="European">European</option>
+                    <option value="French">French</option>
+                    <option value="German">German</option>
+                    <option value="Greek">Greek</option>
+                    <option value="Indian">Indian</option>
+                    <option value="Irish">Irish</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Jewish">Jewish</option>
+                    <option value="Korean">Korean</option>
+                    <option value="Latin American">Latin American</option>
+                    <option value="Mediterranean">Mediterranean</option>
+                    <option value="Mexican">Mexican</option>
+                    <option value="Middle Eastern">Middle Eastern</option>
+                    <option value="Nordic">Nordic</option>
+                    <option value="Southern">Southern</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="Thai">Thai</option>
+
+                </select>
+                <select name="diet" class="pretraga-bar">
+                    <option value="" selected="selected">Odaberite tip ishrane</option>
+                    <option value="Gluten Free">Gluten Free</option>
+                    <option value="Ketogenic">Ketogenic</option>
+                    <option value="Lacto-Vegeterian">Lacto-Vegeterian</option>
+                    <option value="Ovo-Vegeterian">Ovo-Vegeterian</option>
+                    <option value="Vegan">Vegan</option>
+                    <option value="Pescetarian">Pescetarian</option>
+                    <option value="Paleo">Paleo</option>
+                    <option value="Whole30">Whole30</option>
+
+                </select>
+                <select name="intolerances" class="pretraga-bar">
+                    <option value="" selected="selected">Odaberite intolerantnost</option>
+                    <option value="Dairy">Dairy</option>
+                    <option value="Egg">Egg</option>
+                    <option value="Gluten">Gluten</option>
+                    <option value="Grain">Grain</option>
+                    <option value="Peanut">Peanut</option>
+                    <option value="Seafood">Seafood</option>
+                    <option value="Sesame">Sesame</option>
+                    <option value="Shellfish">Shellfish</option>
+                    <option value="Soy">Soy</option>
+                    <option value="Sulfite">Sulfite</option>
+                    <option value="Tree Nut">Tree Nut</option>
+                    <option value="Wheat">Wheat</option>
+                </select>
+
+                <select name="type" class="pretraga-bar">
+                    <option value="" selected="selected">Odaberite tip jela</option>
+                    <option value="main course">Main dish</option>
+                    <option value="dessert">Dessert</option>
+                    <option value="appetizer">Appetizer</option>
+                    <option value="salad">Salad</option>
+                    <option value="bread">Bread</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="soup">Soup</option>
+                    <option value="beverage">Beverage</option>
+                    <option value="sauce">Sauce</option>
+                    <option value="marinade">Marinade</option>
+                    <option value="snack">Snack </option>
+                    <option value="drink">Drink</option>
+                </select>
+
+                <select name="sort" class="pretraga-bar">
+                    <option value="" selected="selected">Odaberite kriterij sortiranja</option>
+                    <option value="popularity">Popularity</option>
+                    <option value="healthiness">Healthiness</option>
+                    <option value="price">Price</option>
+                    <option value="time">Time</option>
+                    <option value="calories">Calories</option>
+                    <option value="carbs">Carbs</option>
+                    <option value="cholesterol">Cholesterol</option>
+                    <option value="total-fat">Total-fat</option>
+                    <option value="fiber">Fiber</option>
+                    <option value="protein">Protein</option>
+                    <option value="zinc">Zinc </option>
+                    <option value="iron">Iron</option>
+                </select>
+
+                <br />
+                <input type="submit" value="Pretraga!" class="pretraga-btn">
+            </div>
+
+
+        </form>
+
+        <div class="naslov-sastojci">
+            <label>Galerija recepata</label>
+            <h1>Osvjezite stranicu da biste pregledali novih 40 recepata!</h1>
+        </div>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- :::::: Kartice :::::: -->
+        <div class="kartice-galerija">
+            {{#each recepts}}
+
+            <div class="kartica-mjesta">
+                <img class="kartica-slika" src="{{this.image}}" alt="Amfora">
+                <div class="kartica-naslov"> {{this.title}} </div>
+                <a href="/recepts/{{this.id}}">Detalji o receptu</a>
+            </div>
+
+            {{/each}}
+
+        </div>
+        <!-- ~~~~~~~~~~~~~~~~~~~~ -->
+        <div class="footer">
+            <div class="divider"> </div>
+            Copyright 2020 &copy; Recipely <br>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

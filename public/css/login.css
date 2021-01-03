@@ -1,0 +1,132 @@
+/* :::::::::::::::: LOGIN ::::::::::::::::::: */
+* {
+    margin: auto;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+.mainanan {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url("../img/index/povrce.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.bloomora img {
+    width: 60px;
+    float: left;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+    .bloomora img:hover {
+        transition: 1s ease;
+        filter: brightness(3);
+        transform: translateY(2px);
+    }
+
+.loginbox { /* uredjivanje login-box-a */
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    opacity: 0.85;
+    border-radius: 20px;
+}
+
+    .loginbox a {
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 35px;
+        color: #fff;
+    }
+
+        .loginbox a:hover {
+            color: #7cb865;
+            text-decoration: underline;
+        }
+
+.login-naslov { /* uredjivanje naslova 'Login' */
+    margin-top: -30px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Dancing Script';
+    color: #7cb865;
+}
+
+.form-label { /* uredjivanje label-a */
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.form-input { /* uredjivanje inputa */
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+
+
+.form-log-btn { /* login button */
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    background: #7cb865;
+    font-size: 18px;
+    color: #3d3c3d;
+    border-radius: 20px;
+    transition: transform 0.9s ease;
+}
+
+    .form-log-btn:hover {
+        border-radius: 30px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.alert {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 9999;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 1.6rem 15rem;
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+}
+.alert--success {
+    background-color: #7cb865;
+    height: 100 px;
+}
+.alert--error {
+  background-color: #eb4d4b;
+}

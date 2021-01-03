@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Moji recepti | Recipely</title>
+    <link rel="stylesheet" type="text/css" href="/css/savedRecepts.css">
+    <link rel="shortcut icon" href="/img/index/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Eczar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="nav-area">
+        <div class="wrapper">
+            <div id="login-message"></div>
+
+            <div class="logo">
+                <img src="/img/index/LogoR.png">
+            </div>
+
+            <ul>
+                <li><a href="/">Pocetna</a></li>
+                <li><a href="/me">Moj profil</a></li>
+                <li><a href="/recepts">Recepti</a></li>
+                <li class="active"><a href="/recepts/mojiRecepti">Spremljeni recepti</a></li>
+                <li><a href="/meal">Planovi ishrane</a></li>
+                <li><a href="/meal/myMeal">Moj plan ishrane</a></li>
+                <li><a href="/logOut">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="traka">
+        <h1>SACUVAJTE RECEPT VEC DANAS<br>TREBATE POMOC?: (037) 311 829</h1>
+    </div>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- :::::: Kartice :::::: -->
+    <div class="kartice-galerija">
+
+        {{#each recepts}}
+        <div class="kartica-mjesta">
+            ID recepta sta ce mi ovo: {{this.id}}<br>
+
+            <img class="kartica-slika" src="{{this.image}}" alt="Amfora">
+            <div class="kartica-naslov"> {{this.title}} </div>
+            <a class="detalji" href="/recepts/savedRecept/{{this.id}}/">Detalji</a>
+            <a name="{{this.id}}" class="brisanje-link">Brisanje</a>
+        </div>
+        {{/each}}
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="/js/savedRecepts.js"></script>
+
+</html>

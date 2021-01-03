@@ -1,0 +1,128 @@
+* {
+    margin: auto;
+    padding: 0;
+    font-family: Century Gothic;
+    box-sizing: border-box;
+    cursor: url(../img/index/oth638.cur), default;
+}
+
+.main {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)),url(../img/index/bihac1.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.createbox { /* uredjivanje create-box-a */
+    width: 500px;
+    height: 590px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    opacity: 0.85;
+    border-radius: 20px;
+}
+
+
+.naslov { /* uredjivanje naslova 'Registrirajte se' */
+    margin: -25px;
+    padding: 0 0 15px;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+/* ::::: DUPLIKAT ::::: */
+.form-label { /* uredjivanje label-a */
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+
+.form-input { /* uredjivanje inputa */
+    margin-bottom: 14px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #8a6a7f;
+    background: transparent;
+    outline: none;
+    height: 20px;
+    color: white;
+    font-size: 15px;
+}
+
+/* ::::::::::::::::::::::::::::::: */
+
+.form-btn {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    background: #996578;
+    font-size: 18px;
+    color: #3d3c3d;
+    border-radius: 20px;
+    transition: transform 0.9s ease;
+    margin-top: 15px;
+}
+
+    .form-btn:hover {
+        border-radius: 30px;
+        cursor: url(../img/index/oth630.cur), pointer;
+        color: #fff;
+    }
+
+.txt {
+    margin-top: 0px;
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: #993777;
+    font-weight: bold;
+    cursor: url(../img/index/oth630.cur), pointer;
+}
+
+    .txt:hover .uputebox {
+        visibility: visible;
+    }
+
+.uputebox { /* box sa strane s uputama o unosenju stolova */
+    width: 370px;
+    height: 265px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(75%, -50%);
+    box-sizing: border-box;
+    padding: 20px 10px;
+    opacity: 0.80;
+    border-radius: 20px;
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: center;
+    visibility: hidden;
+}
+
+.izbor { /* Uredjivanje selecta */
+    background: #996578;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    box-shadow: 3px 3px 5px #000;
+    outline: none;
+    color: #fff;
+    border-radius: 15px;
+    margin-bottom: 14px;
+    text-align: center;
+}

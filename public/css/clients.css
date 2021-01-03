@@ -1,0 +1,219 @@
+* {
+    margin: auto;
+    padding: 0;
+    font-family: Century Gothic;
+    box-sizing: border-box;
+    cursor: url(../img/index/oth638.cur), default;
+}
+
+.main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/index/bihac1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nav {
+    padding: 4px 76px;
+}
+
+ul { /* pozicija navbara */
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+    ul li {
+        display: inline-block;
+    }
+
+        ul li a { /* izgled navbara */
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            border: 1px solid #fff transparent;
+            text-shadow: 5px 5px 5px #000;
+            
+        }
+
+            ul li a:hover { /* ponašanje navbara 'on-click' */
+                transition: 0.7s ease; /* brzina mijenjanja 'on-click' */
+                background-color: #996578;
+                color: #fff;
+                border-color: #996578;
+                border-radius: 10px;
+                text-shadow: none;
+                cursor: url(../img/index/oth630.cur), pointer;
+            }
+
+        ul li.active a { /* aktivan je dio navbara za poèetnu stranicu */
+            border: 1px solid #fff;
+            border-radius: 10px;
+        }
+
+.slikica img { /* podešavanje slike u gornjem desnom uglu */
+    float: right;
+    width: 35px;
+    height: auto;
+    margin-top: 15px;
+}
+
+.logo img { /* podešavanje logotipa */
+    float: left;
+    width: 43px;
+    height: auto;
+    margin-top: 15px;
+}
+
+
+.kartice-galerija {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    padding: 70px;
+    padding-left: 110px;
+}
+
+.kartica-mjesta {
+    width: 300px;
+    height: 340px;
+    background: #fff;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 90px 30px;
+    opacity: 0.8;
+    border-radius: 2px;
+    box-shadow: 25px 25px 20px -20px #000;
+    margin-top: 130px;
+    transform: translate(-7%, 0%);
+}
+
+.podatak {
+    color: #826c79;
+}
+
+.kartica-naslov {
+    font-weight: bold;
+    position: absolute;
+    transform: translate(0px, 15px);
+    z-index: 1;
+    background: #996578;
+    opacity: 0.8;
+    padding: 10px 10px;
+    width: 240px;
+    margin-top: -40px;
+    text-align: center;
+}
+
+.kartica-slika {
+    padding: 10px;
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
+    margin-top: -20px;
+    width: 120px;
+    height: 130px;
+    transform: translate(55px, -135px);
+}
+
+.kartica-mjesta h1 {
+    margin-top: 25px;
+    position: absolute;
+    z-index: 1;
+    color: #474a48;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.kartica-mjesta a {
+    margin-top: 190px;
+    float: right;
+    text-decoration: none;
+    font-size: 15px;
+    color: #996578;
+    font-weight: bold;
+}
+
+    .kartica-mjesta a:hover {
+        cursor: url(../img/index/oth630.cur), pointer;
+    }
+
+.footer {
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+.divider { /* podešavanje dividera */
+    width: 600px;
+    height: 10px;
+    background-color: #996578;
+    margin: 25px auto;
+    margin-bottom: 5px;
+}
+
+.pretraga { /* pozicioniranje cjelokupnog diva za pretragu */
+    color: white;
+    top: 0;
+    left: 0;
+    transform: translate(0%, 150%);
+}
+
+    .pretraga h4 { /* Uredjivanje naslova */
+        font-size: 15px;
+        text-shadow: 5px 5px 5px #000;
+        font-weight: lighter;
+        line-height: 30px;
+    }
+
+.pretraga-bar { /* Uredjivanje selecta */
+    background: #996578;
+    padding: 5px;
+    width: 250px;
+    border: none;
+    box-shadow: 3px 3px 5px #000;
+    outline: none;
+    color: #fff;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.pretraga-bar:hover {
+    transition: 0.5s ease;
+    transform: translateY(1px);
+    cursor: url(../img/index/oth630.cur), pointer;
+    box-shadow: 5px 5px 5px #000;
+}
+
+.pretraga-btn {
+    background: #3d3c3d;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    box-shadow: 3px 3px 5px #000;
+    margin-left: 5px;
+}
+
+    .pretraga-btn:hover {
+        transition: 0.5s ease;
+        transform: translateY(1px);
+        cursor: url(../img/index/oth630.cur), pointer;
+        box-shadow: 5px 5px 5px #000;
+    }
+
+::-webkit-scrollbar { /* kostumizacija scrollbara */
+    width: 10px;
+    background-color: #3d3c3d;
+}
+
+::-webkit-scrollbar-thumb { /* kostumizacija crtice */
+    border-radius: 15px;
+    background-color: #996578;
+}

@@ -1,0 +1,225 @@
+* {
+    margin: auto;
+    padding: 0;
+    font-family: Century Gothic;
+    box-sizing: border-box;
+    cursor: url(../img/index/oth638.cur), default;
+}
+
+.main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)),url(../img/index/bihac1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nav {
+    padding: 3px 70px;
+}
+
+.pocetak {
+    position: absolute;
+    z-index: 1;
+    transform: translate(620px, 100px);
+}
+
+    .pocetak img {
+        width: 120px;
+        height: 120px;
+        padding: 7px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+
+    .pocetak i {
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 2px 2px 5px #000;
+        position: absolute;
+        z-index: 1;
+        transform: translate(-110px, 120px);
+    }
+
+
+ul { /* pozicija navbara */
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+    ul li {
+        display: inline-block;
+    }
+
+        ul li a { /* izgled navbara */
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            border: 1px solid #fff transparent;
+            text-shadow: 5px 5px 5px #000;
+            transition: 0.7s ease; /* brzina mijenjanja 'on-click' */
+        }
+
+            ul li a:hover { /* ponašanje navbara 'on-click' */
+                background-color: #996578;
+                color: #fff;
+                border-color: #996578;
+                border-radius: 10px;
+                text-shadow: none;
+                cursor: url(../img/index/oth630.cur), pointer;
+            }
+
+        ul li.active a { /* aktivan je dio navbara za poèetnu stranicu */
+            border: 1px solid #fff;
+            border-radius: 10px;
+        }
+
+.slikica img { /* podešavanje slike u gornjem desnom uglu */
+    float: right;
+    width: 35px;
+    height: auto;
+    margin-top: 15px;
+}
+
+.logo img { /* podešavanje logotipa */
+    float: left;
+    width: 43px;
+    height: auto;
+    margin-top: 15px;
+}
+
+
+.kartice-galerija {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding: 10px;
+}
+
+.kartica-mjesta {
+    width: 415px;
+    height: 245px;
+    background: #fff;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    opacity: 0.9;
+    border-radius: 2px;
+    box-shadow: 25px 25px 20px -20px #000;
+    transform: translate(-25%, 110%);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.frame {
+    position: absolute;
+    z-index: 1;
+    transform: translate(-2.5%, -4%);
+}
+
+    .frame img {
+        width: 415px;
+        height: 245px;
+    }
+
+.left-btn {
+    position: absolute;
+    z-index: 1;
+    padding: 5px 15px;
+    background: #28b84c;
+    font-size: 20px;
+    width: 100px;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    transform: translate(-130px, 0px);
+}
+
+    .left-btn:hover {
+        transition: 0.5s ease;
+        border-radius: 25px;
+        cursor: url(../img/index/oth630.cur), pointer;
+    }
+
+.right-btn {
+    position: absolute;
+    z-index: 1;
+    padding: 5px 15px;
+    background: #c92424;
+    font-size: 20px;
+    width: 100px;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    transform: translate(20px, 0px);
+}
+
+.right-btn:hover {
+    transition: 0.5s ease;
+    border-radius: 25px;
+    cursor: url(../img/index/oth630.cur), pointer;
+}
+
+.middle-btn {
+    position: absolute;
+    z-index: 1;
+    padding: 5px 15px;
+    background: #c92424;
+    font-size: 20px;
+    width: 100px;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    transform: translate(-55px, 0px);
+}
+
+    .middle-btn:hover {
+        transition: 0.5s ease;
+        border-radius: 25px;
+        cursor: url(../img/index/oth630.cur), pointer;
+    }
+
+.kartica-mjesta p {
+    padding: 10px 9px;
+}
+
+.divs {
+    color: #82606e;
+}
+
+.nass {
+    color: #6b636b;
+}
+
+
+.footer {
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+    padding-bottom: 20px;
+    padding-top: 320px;
+}
+
+.divider { /* podešavanje dividera */
+    width: 600px;
+    height: 10px;
+    background-color: #996578;
+    margin: 25px auto;
+    margin-bottom: 5px;
+}
+
+::-webkit-scrollbar { /* kostumizacija scrollbara */
+    width: 10px;
+    background-color: #3d3c3d;
+}
+
+::-webkit-scrollbar-thumb { /* kostumizacija crtice */
+    border-radius: 15px;
+    background-color: #996578;
+}
