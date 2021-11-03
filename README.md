@@ -1,7 +1,6 @@
 # recipely-app
-Aplikacija omogućuje pretragu recepata, planova ishrane, spremanje istih i niz dodatnih opcija. Detaljniji opis vidljiv u dokumentaciji. Koristi Spoonacular API za dohvatanje podataka, kao i za kreaciju specijaliziranih
-planova ishrane. Korišten Express razvojni okvir i NodeJS serverska plaforma. 
-Kreirano u kolaboraciji sa Nejrom Melkic.
 
-Datum: 27-09-2020.g.
+Web app, used for recipes and diet plans manipulation, as well with a number of additional options. A more detailed description can be seen in the documentation. App uses the Spoonacular API to retrieve data as well as to create specialized diet plans. ExpressJs framework used. Created as a college assignment, in collaboration with Nejra Melkić.
+
+Date: 27/09/2020.g.
 
